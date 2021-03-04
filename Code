@@ -1,0 +1,149 @@
+<! DOCTYPE html >
+< html  lang = " en " >
+
+< cabeça >
+  < meta  charset = " UTF-8 " />
+  < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " />
+  < meta  http-equiv = " Compatível com X-UA " content = " ie = edge " />
+  < link  rel = " stylesheet " href = " style.css " />
+  < title > Thayanne Oliveira </ title >
+</ head >
+
+< corpo >
+  < div  id = " partículas-js " > </ div >
+  < div  class = " container " >
+    < img  class = " profile " src = " ./assets/profile.png " />
+
+    < h2 > Philippe Aquino </ h2 >
+    < p  class = " subtitle " > DevOps | Nuvem </ p >
+    < p > Me acompanhe aqui ✌🏼 </ p >
+
+    < div  class = " info-container " >
+      < div  class = " social-media-container " >
+        < A  href = " https://discord.gg/xFj4nyeSzq " >
+          < i  data-feather = " send " > </ i >
+        </ a >
+        
+        < A  href = " https://www.instagram.com/taayolli/ " > < i  dados de penas =" instagram " > </ i > </ a >
+      </ div >
+
+      < div  class = " content " >
+        < div  id = " conteúdo-secundário " class = " conteúdo-secundário " >
+          < h3 >  < i  id = " go-back-button " data-feather = " arrow-left " > </ i > Meu Setup </ h3 >
+          
+        </ div >
+        < div  class = " main-content " >
+          < p > Faço parte do tempo 👇🏼 </ p >
+          < div  class = " video-container " >
+            < iframe  src = " https://thumbs.gfycat.com/ClearTinyDachshund-size_restricted.gif " scrolling = " no " frameborder = " 0 "
+              allow = " acelerômetro; reprodução automática; gravação na área de transferência; mídia criptografada; giroscópio; imagem na imagem "
+              allowfullscreen > </ iframe >
+          </ div >
+          < a  href = " https://www.youtube.com/c/treinacloud?sub_confirmation=1 "
+            class = " link destaque " >
+            🚀 Acessar Youtube
+          </ a >
+          
+        </ div >
+      </ div >
+    </ div >
+  </ div >
+</ body >
+< script  src = " https://unpkg.com/feather-icons " > </ script >
+< script >
+  pena . substituir ( ) ;
+</ script >
+< script  src = " https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js " > </ script >
+< script >
+  partículasJS ( "partículas-js" ,  {
+    partículas : {
+      número : {
+        valor : 1200 ,
+        densidade : {  ativar : verdadeiro ,  área_de_valor : 789.1476416322727  }
+      } ,
+      cor : {
+        valor : "#ffffff"
+      } ,
+      forma : {
+        tipo : "círculo" ,
+        traço : {  largura : 0 ,  cor : "# 000000"  } ,
+        polígono : {  nb_sides : 5  } ,
+        imagem : {  src : "img / github.svg" ,  largura : 100 ,  altura : 100  }
+      } ,
+      opacidade : {
+        valor : 0,48927153781200905 ,
+        aleatório : falso ,
+        anim : {  ativar : verdadeiro ,  velocidade : 0,2 ,  opacity_min : 0 ,  sincronizar : falso  }
+      } ,
+      tamanho : {
+        valor : 2 ,
+        aleatório : verdadeiro ,
+        anim : {  ativar : verdadeiro ,  velocidade : 2 ,  tamanho_min : 0 ,  sincronizar : falso  }
+      } ,
+      line_linked : {
+        habilitar : verdadeiro ,
+        distância : 50 ,
+        cor : "#ffffff" ,
+        opacidade : 0,4 ,
+        largura : 1
+      } ,
+      mover : {
+        habilitar : verdadeiro ,
+        velocidade : 1 ,
+        direção : "nenhum" ,
+        aleatório : verdadeiro ,
+        direto : falso ,
+        out_mode : "out" ,
+        bounce : false ,
+        atrair : {  enable : false ,  rotateX : 600 ,  rotateY : 1200  }
+      }
+    } ,
+    interatividade : {
+      detect_on : "canvas" ,
+      eventos : {
+        onhover : {
+          habilitar : verdadeiro ,
+          modo : "repulsa"
+        } ,
+        onclick : {  enable : true ,  mode : "push"  } ,
+        resize : true
+      } ,
+      modos : {
+        agarrar : {  distância : 400 ,  line_linked : {  opacidade : 1  }  } ,
+        bolha : {
+          distância : 83,91608391608392 ,
+          tamanho : 1 ,
+          duração : 3 ,
+          opacidade : 1 ,
+          velocidade : 3
+        } ,
+        repulsa : {  distância : 25 ,  duração : 8,4  } ,
+        empurrar : {  partículas_nb : 4  } ,
+        remover : {
+          partículas_nb : 2
+        }
+      }
+    } ,
+    retina_detect : true
+  } ) ;
+</ script >
+< script >
+  const  setupButton  =  document . getElementById ( "botão de configuração" ) ;
+  const  goBackButton  =  document . getElementById ( "botão voltar" ) ;
+
+  setupButton . addEventListener ( "click" ,  showContent ) ;
+  goBackButton . addEventListener ( "click" ,  hideContent ) ;
+
+  function  showContent ( )  {
+    documento . getElementById ( "conteúdo secundário" ) . classList . remover ( "ocultar" ) ;
+    documento . getElementById ( "conteúdo secundário" ) . classList . adicionar ( "mostrar" ) ;
+  }
+
+  function  hideContent ( )  {
+    documento . getElementById ( "conteúdo secundário" ) . classList . remover ( "mostrar" ) ;
+    documento . getElementById ( "conteúdo secundário" ) . classList . adicionar ( "ocultar" ) ;
+  }
+
+</ script >
+
+</ html >
